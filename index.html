@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban - Assignment2</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="board">
+        <div class="card">
+            <div class="little-card" id="todo-card">
+                <h3>TODO</h3>
+                <div class="task" draggable="true" >
+                    Feed Anyongs
+                    <i class="fas fa-trash-alt delete-icon" onclick="deleteTask(this)"></i>
+                    <i class="fas fa-edit edit-icon" onclick="editTask(this)"></i>
+                </div>
+
+                <div class="task" draggable="true">House Cleaning 
+                    <i class="fas fa-trash-alt delete-icon" onclick="deleteTask(this)"></i>
+                    <i class="fas fa-edit edit-icon" onclick="editTask(this)"></i>
+                </div>
+
+                <form action="" id="todo-form">
+                    <input type="text" placeholder="Add Here Please" id="todo-input">
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            <div class="little-card">
+                    <h3>Doing</h3>
+                    <div class="task" draggable="true">Learning JavaScript
+                        <i class="fas fa-trash-alt delete-icon" onclick="deleteTask(this)"></i>
+                        <i class="fas fa-edit edit-icon" onclick="editTask(this)"></i>
+                    </div>
+            </div>
+            <div class="little-card">
+                    <h3 class="done">Done</h3>
+                    <div class="task" draggable="true">Working on assignment 2
+                        <i class="fas fa-trash-alt delete-icon" onclick="deleteTask(this)"></i>
+                        <i class="fas fa-edit edit-icon" onclick="editTask(this)"></i>
+                    </div>
+            </div>
+        </div>
+    <script src="src/drag.js"></script>
+    <script src="src/index.js"></script>
+</body>
+</html>
