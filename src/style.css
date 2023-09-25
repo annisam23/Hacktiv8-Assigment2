@@ -52,7 +52,7 @@
 .card{
     display: flex;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: center;
     gap: 16px;
     padding: 24px 32px;
     overflow: scroll;
